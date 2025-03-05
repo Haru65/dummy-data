@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Sharma - Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 flex justify-center items-center min-h-screen p-10">
+    <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full max-w-4xl">
+        <div class="bg-gray-700 h-48 rounded-t-lg relative border-b border-gray-600">
+            <img src="https://via.placeholder.com/500x150" alt="Cover Image" class="w-full h-full object-cover rounded-t-lg">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="absolute left-6 bottom-0 rounded-full border-4 border-gray-800 w-32 h-32 shadow-md">
+        </div>
+        <div class="p-6 pt-16 border-b border-gray-600">
+            <h1 class="text-3xl font-bold">Rahul Sharma</h1>
+            <p class="text-gray-400 text-lg">Software Engineer | Disillusioned Tech Worker</p>
+            <p class="text-gray-500 text-sm">Mumbai, India | 300+ connections</p>
+            <div class="mt-4 flex space-x-3">
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-800 font-semibold transition-all">Connect</button>
+                <button class="border border-gray-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-700 transition-all">Message</button>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">About</h2>
+            <p class="text-gray-300 mt-2">Software engineer struggling with unrealistic corporate expectations, excessive workload, and outdated leadership. Passionate about calling out inefficiencies in the tech industry.</p>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">Experience</h2>
+            <ul class="mt-2 text-gray-300 space-y-3">
+                <li class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">🔹 <strong>Backend Developer</strong> at CodeMatrix Inc. (2021 - Present) - Endless bug fixes, no recognition.</li>
+                <li class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">🔹 <strong>Software Engineer</strong> at DevSync Ltd. (2018 - 2021) - Worked tirelessly while management took all the credit.</li>
+            </ul>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">Education & Certifications</h2>
+            <p class="text-gray-300 bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">B.Tech in Computer Science - IIT Bombay (2014 - 2018)</p>
+            <p class="text-gray-300 bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">Certification in Cloud Computing - Udemy</p>
+            <p class="text-gray-300 bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">"Corporate Survival Guide for Engineers" - Self-Published</p>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">Posts</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600 cursor-pointer" onclick="togglePost('post1')">
+                    <h3 class="text-lg font-semibold">🔴 "Intern life is just doing all the boring tasks nobody else wants to do."</h3>
+                    <p class="text-gray-400 text-sm">Click to read more...</p>
+                </div>
+                <div id="post1" class="hidden bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">
+                    <p class="text-gray-300">Spent my entire internship fixing Excel sheets and making presentations that no one even reads. I don’t see the point of working this hard when appreciation is nonexistent. Corporate life is not what it’s made out to be.</p>
+                </div>
+                
+                <div class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600 cursor-pointer" onclick="togglePost('post2')">
+                    <h3 class="text-lg font-semibold">🔴 "The company I’m at doesn’t even give proper training."</h3>
+                    <p class="text-gray-400 text-sm">Click to read more...</p>
+                </div>
+                <div id="post2" class="hidden bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">
+                    <p class="text-gray-300">They just throw us into the deep end and expect us to perform perfectly. No mentorship, no guidance—just unrealistic deadlines and pressure. No wonder turnover is so high.</p>
+                </div>
+                
+                <div class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600 cursor-pointer" onclick="togglePost('post3')">
+                    <h3 class="text-lg font-semibold">🔴 "Some full-time employees don’t even know how to use Excel properly."</h3>
+                    <p class="text-gray-400 text-sm">Click to read more...</p>
+                </div>
+                <div id="post3" class="hidden bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">
+                    <p class="text-gray-300">It’s shocking how people who have been in the company for years struggle with basic tasks. And yet, they keep getting promoted while actual hard workers get ignored. How does this even make sense?</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6 rounded-b-lg">
+            <h2 class="text-xl font-semibold">Contact Info</h2>
+            <div>
+                <p class="text-gray-300 mt-2">📧 Email: rahul.sharma@example.com</p>
+                <p class="text-gray-300">🔗 LinkedIn: linkedin.com/in/rahulsharma</p>
+                <p class="text-gray-300">📞 Phone: +91 98765 43211</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglePost(postId) {
+            const post = document.getElementById(postId);
+            post.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarav Mehta - Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 flex justify-center items-center min-h-screen p-10">
+    <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full max-w-4xl">
+        <div class="bg-gray-700 h-48 rounded-t-lg relative border-b border-gray-600">
+            <img src="https://via.placeholder.com/500x150" alt="Cover Image" class="w-full h-full object-cover rounded-t-lg">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="absolute left-6 bottom-0 rounded-full border-4 border-gray-800 w-32 h-32 shadow-md">
+        </div>
+        <div class="p-6 pt-16 border-b border-gray-600">
+            <h1 class="text-3xl font-bold">Aarav Mehta</h1>
+            <p class="text-gray-400 text-lg">Data Scientist | AI Enthusiast | Lifelong Learner</p>
+            <p class="text-gray-500 text-sm">Bangalore, India | 500+ connections</p>
+            <div class="mt-4 flex space-x-3">
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-800 font-semibold transition-all">Connect</button>
+                <button class="border border-gray-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-700 transition-all">Message</button>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">About</h2>
+            <p class="text-gray-300 mt-2">Data scientist passionate about AI, machine learning, and data-driven decision-making. I enjoy exploring emerging technologies and sharing insights on the evolving tech landscape.</p>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">Experience</h2>
+            <ul class="mt-2 text-gray-300 space-y-3">
+                <li class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">🔹 <strong>Data Scientist</strong> at TechWave Solutions (2020 - Present) - Working on AI models for predictive analytics and automation.</li>
+                <li class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">🔹 <strong>Machine Learning Engineer</strong> at DataNexus (2017 - 2020) - Built ML solutions to optimize business processes.</li>
+            </ul>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">Education & Certifications</h2>
+            <p class="text-gray-300 bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">M.Sc. in Data Science - Indian Institute of Science (2015 - 2017)</p>
+            <p class="text-gray-300 bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">Certification in Deep Learning - Coursera (Andrew Ng)</p>
+            <p class="text-gray-300 bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">Google Cloud Certified - Professional Data Engineer</p>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">Posts</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600 cursor-pointer" onclick="togglePost('post1')">
+                    <h3 class="text-lg font-semibold">📊 "AI is reshaping industries—what’s your perspective?"</h3>
+                    <p class="text-gray-400 text-sm">Click to read more...</p>
+                </div>
+                <div id="post1" class="hidden bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">
+                    <p class="text-gray-300">AI adoption is growing across sectors, from healthcare to finance. Some see it as a revolution, while others worry about job displacement. Where do you stand on this evolving debate?</p>
+                </div>
+                
+                <div class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600 cursor-pointer" onclick="togglePost('post2')">
+                    <h3 class="text-lg font-semibold">📚 "Looking to start with data science? Here are some great free resources!"</h3>
+                    <p class="text-gray-400 text-sm">Click to read more...</p>
+                </div>
+                <div id="post2" class="hidden bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">
+                    <p class="text-gray-300">If you're starting your data science journey, here are three resources that helped me: 1️⃣ Kaggle Courses 2️⃣ Fast.ai 3️⃣ Stanford CS229. Hope this helps aspiring data scientists!</p>
+                </div>
+
+                <div class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600 cursor-pointer" onclick="togglePost('post3')">
+                    <h3 class="text-lg font-semibold">🔍 "Remote work vs. Office work—what’s your preference?"</h3>
+                    <p class="text-gray-400 text-sm">Click to read more...</p>
+                </div>
+                <div id="post3" class="hidden bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">
+                    <p class="text-gray-300">Remote work offers flexibility, but some miss in-person collaboration. As companies adapt to hybrid models, what has worked best for you?</p>
+                </div>
+
+                <div class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600 cursor-pointer" onclick="togglePost('post4')">
+                    <h3 class="text-lg font-semibold">📅 "The 4-day workweek—innovation or inefficiency?"</h3>
+                    <p class="text-gray-400 text-sm">Click to read more...</p>
+                </div>
+                <div id="post4" class="hidden bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">
+                    <p class="text-gray-300">Some studies suggest a shorter workweek boosts productivity, while others argue it reduces efficiency. Would you support a 4-day workweek?</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6 rounded-b-lg">
+            <h2 class="text-xl font-semibold">Contact Info</h2>
+            <div>
+                <p class="text-gray-300 mt-2">📧 Email: aarav.mehta@example.com</p>
+                <p class="text-gray-300">🔗 LinkedIn: linkedin.com/in/aaravmehta</p>
+                <p class="text-gray-300">📞 Phone: +91 98765 43210</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglePost(postId) {
+            const post = document.getElementById(postId);
+            post.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
