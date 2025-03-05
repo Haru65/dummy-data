@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 flex justify-center items-center min-h-screen">
+    <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-xl w-full max-w-4xl">
+        <div class="bg-gray-700 h-48 rounded-t-lg relative border-b border-gray-600">
+            <img src="https://via.placeholder.com/500x150" alt="Cover Image" class="w-full h-full object-cover rounded-t-lg">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="absolute left-6 bottom-0 rounded-full border-4 border-gray-800 w-32 h-32 shadow-md">
+        </div>
+        <div class="p-6 pt-16 border-b border-gray-600">
+            <h1 class="text-3xl font-bold">John Doe</h1>
+            <p class="text-gray-400 text-lg">Software Engineer | AI Enthusiast | Web Developer</p>
+            <p class="text-gray-500 text-sm">San Francisco, CA | 500+ connections</p>
+            <div class="mt-4 flex space-x-3">
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-800 font-semibold transition-all">Connect</button>
+                <button class="border border-gray-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-700 transition-all">Message</button>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">About</h2>
+            <p class="text-gray-300 mt-2">Passionate software engineer with 5+ years of experience in web development, AI, and cloud computing. Specialized in full-stack development and cloud-based architectures.</p>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">Experience</h2>
+            <ul class="mt-2 text-gray-300 space-y-3">
+                <li class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">🔹 <strong>Senior Software Engineer</strong> at ABC Corp (2020 - Present) - Led a team of developers to build AI-driven web applications.</li>
+                <li class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">🔹 <strong>Web Developer</strong> at XYZ Inc. (2018 - 2020) - Developed front-end frameworks and optimized UX design.</li>
+            </ul>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">Education</h2>
+            <p class="text-gray-300 bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">B.S. in Computer Science - University of Example (2014 - 2018)</p>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6">
+            <h2 class="text-xl font-semibold">Posts</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600 cursor-pointer" onclick="togglePost('post1')">
+                    <h3 class="text-lg font-semibold">🚀 My Journey into AI</h3>
+                    <p class="text-gray-400 text-sm">Click to read more...</p>
+                </div>
+                <div id="post1" class="hidden bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">
+                    <p class="text-gray-300">The first time I built an AI model, I had no clue what I was doing. I kept tweaking hyperparameters, staring at loss functions that wouldn’t converge, and second-guessing every decision. But after hours of trial and error, something clicked. That’s when I realized AI isn’t just code—it’s a way to teach machines to think, just like us...</p>
+                </div>
+                
+                <div class="bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600 cursor-pointer" onclick="togglePost('post2')">
+                    <h3 class="text-lg font-semibold">💡 Tips for Full-Stack Development</h3>
+                    <p class="text-gray-400 text-sm">Click to read more...</p>
+                </div>
+                <div id="post2" class="hidden bg-gray-750 p-4 rounded-lg shadow-sm border border-gray-600">
+                    <p class="text-gray-300">A mentor once told me: 'A good full-stack developer isn’t one who knows everything but one who can learn anything.' That mindset changed the way I approached coding. Instead of learning React just for the sake of it, I focused on understanding component-based architecture...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-600 p-6 rounded-b-lg">
+            <h2 class="text-xl font-semibold">Contact Info</h2>
+            <div>
+                <p class="text-gray-300 mt-2">📧 Email: johndoe@example.com</p>
+                <p class="text-gray-300">🔗 LinkedIn: linkedin.com/in/johndoe</p>
+                <p class="text-gray-300">📞 Phone: +1 (123) 456-7890</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglePost(postId) {
+            const post = document.getElementById(postId);
+            post.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
